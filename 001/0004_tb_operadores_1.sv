@@ -9,7 +9,7 @@ initial
         c = 4'b1010;
 
         // Operadores lógicos
-        if ((a < b) && (b < c))
+        if ((a < b) && (b > c))
             $display("Teste 1 - V");
         else $display("Teste 1 - F");
         if ((a < b) || (b < c))
@@ -20,8 +20,8 @@ initial
         else $display("Teste 3 - F");
 
         // Operadores de concatenação
-        $display("Conc de 'a' e 'b' - %0b", {a,b});
-        $display("Conc e repeticao de um padrao- %0b", {4{2'b01}});
+        $display("Concatenacao de 'b' e 'c' - %0b", {b,c});
+        $display("Concatenacao e repeticao de um padrao- %0b", {4{3'b101}});
         $finish;
     end
 endmodule

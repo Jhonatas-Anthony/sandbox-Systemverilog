@@ -3,8 +3,8 @@ logic [1:0] a, b;   // -- Definindo 2 variáveis com 2 bits cada
 initial
     begin
         // Modificar os valores a seguir para testar diferentes combinações
-        a = 4'b01;
-        b = 4'b10;
+        a = 2'b01;
+        b = 2'b10;
 
         // Por via de testes, tente com e sem o /* else */
         if (a > b)
