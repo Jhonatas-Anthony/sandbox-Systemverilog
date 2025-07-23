@@ -9,20 +9,11 @@ initial begin
     a = 2'b00;
     b = 2'b00;
 
-    #200;
-
     a = 2'b01;
     b = 2'b00;
 
-    #200;
-
     a = 2'b10;
     b = 2'b00;
-
-    #200;
-
-    $stop;
-    
 end
 endmodule
 
